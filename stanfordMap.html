@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Stanford Map</title>
+
+<style>
+
+	#mapFrame{
+		border-style:solid;
+		border-width:10px;
+		border-color:black;
+		overflow:hidden;
+		width:1200px;
+		height:680px;
+		position:absolute;
+		float:left;
+		
+	}
+	
+	#all{
+		width:100px;
+		float:right;
+		margin-right:5px;
+	}
+
+	#zoom {
+		float:right;
+		margin-top:50px;
+		margin-right:10px;
+	}
+	
+	#nav{
+		float:right;
+		margin-top:15px;
+	}
+	
+	#nav #top_button{
+		margin-left:19px;	
+	}
+	
+	#nav #bottom_button{
+		margin-left:19px;
+	}
+	
+	.left_button {
+		margin-right:12px;
+	}
+	
+	
+</style>
+<script src="map.js" defer></script>
+</head>
+<body>
+
+<div id="all">
+	<div id="zoom">
+		
+			<input type="button" id="plus" value="+">
+			<input type="button" id="minus" value="-">
+	</div>
+	<div id="nav">
+		<div id="top_button">
+			<input type="button" id="top" value="^">
+		</div>
+	
+	<span class="left_button"><input type="button" id="left" value="<"></span>
+	<span class="right_button"><input type ="button" id="right" value=">"></span>
+	<div id="bottom_button">
+			<input type="button" id="bottom" value="v">
+	</div>
+		
+	</div>
+</div>
+
+	<div id="mapFrame">
+	</div>
+	
+</body>
+</html>
